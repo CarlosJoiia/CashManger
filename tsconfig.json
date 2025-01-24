@@ -4,7 +4,9 @@
     "experimentalDecorators": true,
     "strictPropertyInitialization": false, 
     "outDir": "./dist",
+    "rootDir": "./",
 
+    
 
     /* Visit https://aka.ms/tsconfig to read more about this file */
 
@@ -112,5 +114,7 @@
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true   
                                   /* Skip type checking all .d.ts files. */
-  }
+  },
+  "include": ["src/**/*"],                // Inclui todos os arquivos TypeScript dentro da pasta src
+  "exclude": ["node_modules"],
 }
