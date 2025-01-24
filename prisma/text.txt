@@ -1,0 +1,18 @@
+
+/*
+// Define the Despesa model
+model Despesa {
+  id              Int          @id @default(autoincrement())
+  userId          Int
+  date            DateTime     @db.Date
+  value           Decimal      @db.Decimal(10, 2)
+  category        String       @db.VarChar(50)
+  paymentType     PaymentType  // O tipo de pagamento (DEBITO, CREDITO, etc.)
+  description     String?      @db.VarChar(255)
+  createdAt       DateTime     @default(now()) @map("registrado_em")
+  transactionType String?      @db.VarChar(50) // Novo campo para o tipo "NEUTRO"
+
+  User     User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  Parcelas Parcela[] 
+}
+*/
